@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const datos = obtenerDatosForm();
       if (!datos) return;
 
-      const msg = `*Solicitud de Cotización — GS Equipment*\n\n👤 *Nombre:* ${datos.nombre}\n🏢 *Empresa:* ${datos.empresa}\n📞 *Teléfono:* ${datos.telefono}\n🌎 *País:* ${datos.pais}\n📦 *Equipo:* ${datos.tipo}\n🔢 *Cantidad:* ${datos.cantidad}`;
+      const msg = `*Solicitud de Cotización — GS Equipamento*\n\n👤 *Nombre:* ${datos.nombre}\n🏢 *Empresa:* ${datos.empresa}\n📞 *Teléfono:* ${datos.telefono}\n🌎 *País:* ${datos.pais}\n📦 *Equipo:* ${datos.tipo}\n🔢 *Cantidad:* ${datos.cantidad}`;
       const numeroVentas = "50763794292";
       window.open(
         `https://wa.me/${numeroVentas}?text=${encodeURIComponent(msg)}`,
@@ -77,8 +77,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const datos = obtenerDatosForm();
       if (!datos) return;
 
-      const asunto = `Cotización GS Equipment — ${datos.empresa || datos.nombre}`;
-      const cuerpo = `Solicitud de Cotización — GS Equipment\n--------------------------------------------\nNombre: ${datos.nombre}\nEmpresa: ${datos.empresa}\nTeléfono: ${datos.telefono}\nPaís: ${datos.pais}\nEquipo: ${datos.tipo}\nCantidad: ${datos.cantidad}`;
+      const asunto = `Cotización GS Equipamento — ${datos.empresa || datos.nombre}`;
+      const cuerpo = `Solicitud de Cotización — GS Equipamento\n--------------------------------------------\nNombre: ${datos.nombre}\nEmpresa: ${datos.empresa}\nTeléfono: ${datos.telefono}\nPaís: ${datos.pais}\nEquipo: ${datos.tipo}\nCantidad: ${datos.cantidad}`;
       window.location.href = `mailto:ventas@transportegs.com?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
     });
   }
